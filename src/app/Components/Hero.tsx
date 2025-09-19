@@ -13,7 +13,7 @@ export default function Hero() {
           and businesses scale faster and smarter.
         </p>
         <div className="flex gap-4">
-          <button className="px-6 py-3 bg-accent text-dark font-semibold rounded-lg shadow-lg transition">
+          <button className="px-6 py-3 bg-accent text-dark bg-primary font-semibold rounded-lg shadow-lg transition">
             Get Started
           </button>
         </div>
