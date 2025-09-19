@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Portfolio - Team Guidelines
 
-## Getting Started
+### تنظيم الكود والعمل مع الفريق
 
-First, run the development server:
+1. **تنظيم الكود**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   - كل عضو يستخدم نفس الـ coding standards.
+   - استخدم TypeScript + Next.js + Tailwind كما هو متفق.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Git Workflow**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   - كل عضو يعمل feature branch خاص بيه.
+   - قبل الدمج (merge) لازم تعمل Pull Request و Request Review.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **مراجعة الكود**
 
-## Learn More
+   - أي PR لازم يتم مراجعته قبل الدمج.
+   - التعليقات على الكود تكون بناءة وواضحة.
 
-To learn more about Next.js, take a look at the following resources:
+4. **مسؤولية كل عضو**
+   - كل واحد مسؤول عن جزءه، بس لازم يدعم الفريق لو محتاج مساعدة.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### استخدام الخطوط في المشروع
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Titles / Headings:** Montserrat → استخدم `font-heading`
+- **Body / Paragraph:** Roboto → استخدم `font-body`
 
-## Deploy on Vercel
+**ملاحظات:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `font-heading` يستخدم لأي H1, H2, H3، أو أي عنوان كبير.
+- `font-body` يستخدم لأي نصوص عادية أو وصف.
+- لو هتضيف خطوط جديدة، لازم تضيفها في `tailwind.config.js` وتتعرف في الكلاسات.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> الهدف الأساسي: العمل الجماعي يكون سلس ومنظم، والكود يكون نظيف، والتواصل واضح بين كل أعضاء الفريق.
+
+---
+
+### Code Organization & Team Workflow
+
+1. **Code Organization**
+
+   - Each member should follow the same coding standards.
+   - Use TypeScript + Next.js + Tailwind as agreed.
+
+2. **Git Workflow**
+
+   - Each member should work on their own feature branch.
+   - Before merging, create a Pull Request and request a review.
+
+3. **Code Review**
+
+   - All PRs must be reviewed before merging.
+   - Code comments should be constructive and clear.
+
+4. **Individual Responsibility**
+   - Each member is responsible for their part but should support the team if needed.
+
+### Fonts Usage in the Project
+
+- **Titles / Headings:** Montserrat → use `font-heading`
+- **Body / Paragraph:** Roboto → use `font-body`
+
+**Notes:**
+
+- `font-heading` is used for any H1, H2, H3, or large headings.
+- `font-body` is used for normal paragraphs or descriptions.
+- If adding new fonts, add them in `tailwind.config.js` and define their classes.
+
+> Main goal: Ensure smooth team collaboration, clean code, and clear communication among all team members.
