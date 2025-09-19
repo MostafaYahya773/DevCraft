@@ -12,7 +12,7 @@ const images = [
 
 export default function Gallery() {
   return (
-    <div className="w-full py-20 bg-gray-900 text-white space-y-12 overflow-hidden">
+    <div id="gallery" className="w-full py-20   bg-gray-900 text-white space-y-12 overflow-hidden">
       <div className="relative w-full overflow-hidden">
         <div className="flex animate-slide">
           {images.concat(images).map((src, i) => (

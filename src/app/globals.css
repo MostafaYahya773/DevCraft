@@ -27,3 +27,7 @@
 .animate-slide-reverse {
   animation: slide-reverse 15s linear infinite;
 }
+
+html {
+  scroll-behavior: smooth;
+}
