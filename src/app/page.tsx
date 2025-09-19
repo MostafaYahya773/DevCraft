@@ -1,7 +1,14 @@
+
+import Hero from "./Components/Hero";
+import Gallery from "./Components/Gallery";
+
 export default function Home() {
   return (
-    <h1 className="grid place-items-center h-screen font-bold text-3xl">
-      DevCraft
-    </h1>
+    <>
+    <Hero/>
+    <Gallery/>
+    </>
+    
+
   );
 }

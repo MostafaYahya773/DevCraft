@@ -1,44 +1,20 @@
-import type { Metadata } from 'next';
-
-import './globals.css';
-
-import { Montserrat, Roboto } from 'next/font/google';
-
-// use it for titles
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-montserrat',
-});
-// use it for body
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-roboto',
-});
+import './globals.css'
+import Navbar from "./Components/Nav";
+import Footer from "./Components/Footer";
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'DevCraft',
-  description:
-    'We are a software company specializing in web and app development, providing complete solutions including frontend design, backend development, and website maintenance to ensure performance, security, and growth.',
-  keywords: [
-    'Frontend',
-    'Backend',
-    'Web Development',
-    'Website Maintenance',
-    'UI/UX',
-  ],
+  title: 'DevCraft Portfolio',
+  description: 'My portfolio website built with Next.js',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${roboto.variable}`}>
-        {children}
+      <body>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
