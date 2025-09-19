@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.bg-radial {
+  background: radial-gradient(circle at top left, rgba(14, 207, 46, 0.8), transparent 60%),
+              linear-gradient(to bottom right, #111827, #00030a);
+}
+
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes slide-reverse {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-slide {
+  animation: slide 15s linear infinite;
+}
+
+.animate-slide-reverse {
+  animation: slide-reverse 15s linear infinite;
+}
