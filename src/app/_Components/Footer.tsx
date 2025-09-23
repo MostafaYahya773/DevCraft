@@ -53,7 +53,7 @@ export default function Footer() {
           <p className="text-grayLight text-sm mb-4">
             Sign up to search weekly newsletter to get the latest updates.
           </p>
-          <form className="flex">
+          <form className="flex flex-wrap">
             <input
               type="email"
               placeholder="Enter Email Address"

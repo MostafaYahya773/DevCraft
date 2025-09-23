@@ -1,5 +1,5 @@
 'use client';
-
+import { AnimatedSectionProps } from '../interfaces/interfaces';
 import { motion, Variants } from 'framer-motion';
 import React from 'react';
 
@@ -12,7 +12,6 @@ const containerVariants: Variants = {
   },
 };
 
-import { AnimatedSectionProps } from '../interfaces/interfaces';
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   show: {

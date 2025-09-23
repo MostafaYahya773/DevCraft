@@ -42,7 +42,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="w-full min-h-screen p-8 md:p-10 lg:p-20 flex flex-col items-center gap-20"
+      className="w-full min-h-screen p-5 md:p-10  flex flex-col items-center gap-4 lg:gap-10"
     >
       <div className="title flex flex-col items-center">
         <h2 className="lg:text-4xl md:text-2xl font-bold text-white">

@@ -3,6 +3,7 @@ import Gallery from './_Components/Gallery';
 import Services from './_Components/Services';
 import Projects from './_Components/Projects';
 import OurTeam from './_Components/OurTeam';
+import Reviews from './_Components/Reviews';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Services />
       <Projects />
       <OurTeam />
+      <Reviews />
       <Gallery />
     </>
   );

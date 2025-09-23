@@ -41,7 +41,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="w-full min-h-screen p-8 md:p-10 lg:p-20 flex flex-col items-center gap-20"
+      className="w-full min-h-screen p-5 md:p-10 flex flex-col items-center gap-16"
     >
       <div className="title flex flex-col items-center">
         <h2 className="lg:text-4xl md:text-2xl font-bold text-white">
@@ -51,12 +51,9 @@ export default function Services() {
           Innovative programming and design tailored to your needs.
         </p>
       </div>
-      <AnimatedBox className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <AnimatedBox className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 ">
         {services.map((service) => (
-          <div
-            key={service.id}
-            className="p-5 rounded-2xl flex flex-col gap-4 "
-          >
+          <div key={service.id} className="rounded-2xl ">
             <Image
               src={service.img}
               alt="service img"

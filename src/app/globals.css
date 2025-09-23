@@ -22,6 +22,9 @@ html {
     ),
     linear-gradient(to bottom right, #111827, #00030a);
 }
+.lol:hover {
+  background: #000;
+}
 @keyframes slide {
   0% {
     transform: translateX(0);

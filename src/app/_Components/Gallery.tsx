@@ -34,7 +34,7 @@ export default function Gallery() {
           ))}
         </div>
       </div>
-      ={' '}
+
       <div className="relative w-full overflow-hidden">
         <div className="flex animate-slide-reverse">
           {images.concat(images).map((src, i) => (
