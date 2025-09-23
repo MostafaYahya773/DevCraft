@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaLinkedinIn} from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
           <h3 className="text-lg font-bold mb-4">About Us</h3>
           <p className="text-grayLight text-sm mb-4">
             We build smart web & mobile solutions that turn ideas into reality.
-             Not just development — we create digital advantages.
+            Not just development — we create digital advantages.
           </p>
           <div className="flex gap-4 text-grayLight">
             <FaFacebookF className="hover:text-primary cursor-pointer" />
@@ -32,10 +32,18 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-bold mb-4">Services</h3>
           <ul className="space-y-2 text-grayLight text-sm">
-            <li className="hover:text-primary cursor-pointer">UI/UX Experience</li>
-            <li className="hover:text-primary cursor-pointer">Web Development</li>
-            <li className="hover:text-primary cursor-pointer">Product Design</li>
-            <li className="hover:text-primary cursor-pointer">SEO Optimization</li>
+            <li className="hover:text-primary cursor-pointer">
+              UI/UX Experience
+            </li>
+            <li className="hover:text-primary cursor-pointer">
+              Web Development
+            </li>
+            <li className="hover:text-primary cursor-pointer">
+              Product Design
+            </li>
+            <li className="hover:text-primary cursor-pointer">
+              SEO Optimization
+            </li>
           </ul>
         </div>
 
@@ -63,8 +71,7 @@ export default function Footer() {
 
       {/* Bottom */}
       <div className="bg-gray-900 text-gray-500 text-sm py-4 text-center">
-        © All Copyright 2025 by{" "}
-        <span className="text-primary">DevCraft</span>
+        © All Copyright 2025 by <span className="text-primary">DevCraft</span>
       </div>
     </footer>
   );

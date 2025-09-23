@@ -1,14 +1,13 @@
-"use client";
-import { useState } from "react";
-import Link from "next/link";
-import { HiMenu, HiX } from "react-icons/hi";
-
+'use client';
+import { useState } from 'react';
+import Link from 'next/link';
+import { HiMenu, HiX } from 'react-icons/hi';
 const navLinks = [
-  { label: "HOME", href: "/" },
-  { label: "PROJECTS", href: "/projects" },
-  { label: "SERVICES", href: "/services" },
-  { label: "TEAM", href: "/team" },
-  { label: "GALLERY", href: "#gallery" },
+  { label: 'HOME', href: '/' },
+  { label: 'PROJECTS', href: '#projects' },
+  { label: 'SERVICES', href: '#services' },
+  { label: 'TEAM', href: '#team' },
+  { label: 'GALLERY', href: '#gallery' },
 ];
 
 export default function Navbar() {
@@ -32,10 +31,7 @@ export default function Navbar() {
       </ul>
 
       {/* Mobile Menu Button */}
-      <button
-        className="md:hidden text-2xl"
-        onClick={() => setOpen(!open)}
-      >
+      <button className="md:hidden text-2xl" onClick={() => setOpen(!open)}>
         {open ? <HiX /> : <HiMenu />}
       </button>
 

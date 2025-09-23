@@ -1,18 +1,21 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const images = [
-  "/gallery/gallery2.png",
-    "/gallery/gallery6.png",
-  "/gallery/gallery3.jpg",
-  "/gallery/gallery4.png",
-    "/gallery/gallery7.png",
-  "/gallery/gallery5.png",
-  "/gallery/gallery8.png",
+  '/gallery/gallery2.png',
+  '/gallery/gallery6.png',
+  '/gallery/gallery3.jpg',
+  '/gallery/gallery4.png',
+  '/gallery/gallery7.png',
+  '/gallery/gallery5.png',
+  '/gallery/gallery8.png',
 ];
 
 export default function Gallery() {
   return (
-    <div id="gallery" className="w-full py-20   bg-gray-900 text-white space-y-12 overflow-hidden">
+    <div
+      id="gallery"
+      className="w-full py-20  text-white space-y-12 overflow-hidden"
+    >
       <div className="relative w-full overflow-hidden">
         <div className="flex animate-slide">
           {images.concat(images).map((src, i) => (
@@ -31,8 +34,8 @@ export default function Gallery() {
           ))}
         </div>
       </div>
-
-=      <div className="relative w-full overflow-hidden">
+      ={' '}
+      <div className="relative w-full overflow-hidden">
         <div className="flex animate-slide-reverse">
           {images.concat(images).map((src, i) => (
             <div

@@ -2,22 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-.bg-radial {
-  background: radial-gradient(circle at top left, rgba(14, 207, 46, 0.8), transparent 60%),
-              linear-gradient(to bottom right, #111827, #00030a);
+html {
+  scroll-behavior: smooth;
 }
 
+.hoverAnimation:hover {
+  box-shadow: 0px 0px 10px 0px rgba(211, 249, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(211, 249, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(211, 249, 0, 0.75);
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-5px);
+}
 
+.bg-radial {
+  background: radial-gradient(
+      circle at top left,
+      rgba(14, 207, 46, 0.8),
+      transparent 60%
+    ),
+    linear-gradient(to bottom right, #111827, #00030a);
+}
 @keyframes slide {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 @keyframes slide-reverse {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .animate-slide {
@@ -28,6 +48,6 @@
   animation: slide-reverse 15s linear infinite;
 }
 
-html {
-  scroll-behavior: smooth;
+.box-shadow {
+  box-shadow: 0px 0px 24px -15px #d3f900, 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }

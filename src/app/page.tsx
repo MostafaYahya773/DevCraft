@@ -1,14 +1,17 @@
-
-import Hero from "./Components/Hero";
-import Gallery from "./Components/Gallery";
+import Hero from './_Components/Hero';
+import Gallery from './_Components/Gallery';
+import Services from './_Components/Services';
+import Projects from './_Components/Projects';
+import OurTeam from './_Components/OurTeam';
 
 export default function Home() {
   return (
     <>
-    <Hero/>
-    <Gallery/>
+      <Hero />
+      <Services />
+      <Projects />
+      <OurTeam />
+      <Gallery />
     </>
-    
-
   );
 }

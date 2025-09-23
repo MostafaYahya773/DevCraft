@@ -1,6 +1,6 @@
-import './globals.css'
-import Navbar from "./Components/Nav";
-import Footer from "./Components/Footer";
+import './globals.css';
+import Navbar from './_Components/Nav';
+import Footer from './_Components/Footer';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -8,12 +8,16 @@ export const metadata: Metadata = {
   description: 'My portfolio website built with Next.js',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>
         <Navbar />
-        <main>{children}</main>
+        <main className="bg-darkTheme">{children}</main>
         <Footer />
       </body>
     </html>
