@@ -21,3 +21,16 @@ export interface TeamSocailProps {
   facebook: string;
   whatsapp: string;
 }
+
+export interface Projects {
+  id: number;
+  name: string;
+  description: string;
+  images: string[];
+  link: string;
+}
+
+export interface Whyus {
+  title: string;
+  description: string;
+}

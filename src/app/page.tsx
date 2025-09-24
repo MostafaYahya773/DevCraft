@@ -2,8 +2,8 @@ import Hero from './_Components/Hero';
 import Gallery from './_Components/Gallery';
 import Services from './_Components/Services';
 import Projects from './_Components/Projects';
-import OurTeam from './_Components/OurTeam';
 import Reviews from './_Components/Reviews';
+import WhyUs from './_Components/WhyUs';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Projects />
-      <OurTeam />
+      <WhyUs />
       <Reviews />
       <Gallery />
     </>

@@ -16,10 +16,10 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-dark text-white py-5 px-5 md:px-10 flex justify-between items-center z-50 shadow-md">
       {/* Logo */}
-      <div className="flex items-center  gap-2">
+      <Link href="/" className="flex items-center  gap-2">
         <span className="text-primary text-2xl font-bold">x</span>
         <span className="font-heading text-xl">DevCraft</span>
-      </div>
+      </Link>
 
       {/* Desktop Links */}
       <ul className="hidden md:flex gap-6  uppercase font-body text-sm">
